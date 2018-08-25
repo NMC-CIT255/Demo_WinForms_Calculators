@@ -33,6 +33,9 @@
             this.txtBox_ClownsPerCar = new System.Windows.Forms.TextBox();
             this.lbl_NumberOfCars = new System.Windows.Forms.Label();
             this.txtBox_Cars = new System.Windows.Forms.TextBox();
+            this.btn_Calculate = new System.Windows.Forms.Button();
+            this.btn_Clear = new System.Windows.Forms.Button();
+            this.txtBox_TotalClowns = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_AppTitle
@@ -41,7 +44,7 @@
             this.lbl_AppTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_AppTitle.Location = new System.Drawing.Point(0, 0);
             this.lbl_AppTitle.Name = "lbl_AppTitle";
-            this.lbl_AppTitle.Size = new System.Drawing.Size(678, 40);
+            this.lbl_AppTitle.Size = new System.Drawing.Size(477, 40);
             this.lbl_AppTitle.TabIndex = 0;
             this.lbl_AppTitle.Text = "Clown Calculator";
             this.lbl_AppTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -78,19 +81,51 @@
             this.txtBox_Cars.Size = new System.Drawing.Size(100, 22);
             this.txtBox_Cars.TabIndex = 4;
             // 
+            // btn_Calculate
+            // 
+            this.btn_Calculate.Location = new System.Drawing.Point(37, 173);
+            this.btn_Calculate.Name = "btn_Calculate";
+            this.btn_Calculate.Size = new System.Drawing.Size(175, 38);
+            this.btn_Calculate.TabIndex = 5;
+            this.btn_Calculate.Text = "Calculate Total Clowns";
+            this.btn_Calculate.UseVisualStyleBackColor = true;
+            this.btn_Calculate.Click += new System.EventHandler(this.btn_Calculate_Click);
+            // 
+            // btn_Clear
+            // 
+            this.btn_Clear.Location = new System.Drawing.Point(360, 94);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(53, 48);
+            this.btn_Clear.TabIndex = 6;
+            this.btn_Clear.Text = "Clear";
+            this.btn_Clear.UseVisualStyleBackColor = true;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
+            // 
+            // txtBox_TotalClowns
+            // 
+            this.txtBox_TotalClowns.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_TotalClowns.Location = new System.Drawing.Point(237, 173);
+            this.txtBox_TotalClowns.Name = "txtBox_TotalClowns";
+            this.txtBox_TotalClowns.Size = new System.Drawing.Size(82, 38);
+            this.txtBox_TotalClowns.TabIndex = 7;
+            // 
             // Frm_CalcA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(678, 411);
+            this.ClientSize = new System.Drawing.Size(477, 243);
+            this.Controls.Add(this.txtBox_TotalClowns);
+            this.Controls.Add(this.btn_Clear);
+            this.Controls.Add(this.btn_Calculate);
             this.Controls.Add(this.txtBox_Cars);
             this.Controls.Add(this.lbl_NumberOfCars);
             this.Controls.Add(this.txtBox_ClownsPerCar);
             this.Controls.Add(this.lbl_NumberOfClownsPerCar);
             this.Controls.Add(this.lbl_AppTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Frm_CalcA";
-            this.Text = "Simple Calculator";
+            this.Text = "Awesome Calculators";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,6 +138,9 @@
         private System.Windows.Forms.TextBox txtBox_ClownsPerCar;
         private System.Windows.Forms.Label lbl_NumberOfCars;
         private System.Windows.Forms.TextBox txtBox_Cars;
+        private System.Windows.Forms.Button btn_Calculate;
+        private System.Windows.Forms.Button btn_Clear;
+        private System.Windows.Forms.TextBox txtBox_TotalClowns;
     }
 }
 
