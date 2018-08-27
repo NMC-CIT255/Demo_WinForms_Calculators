@@ -20,6 +20,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
         private void Form1_Load(object sender, EventArgs e)
         {
             PopulateChainringComboBoxes();
+            PopulateNumberOfSprocketsComboBox();
 
             radBtn_Chainring1.Checked = true;
 
@@ -30,6 +31,26 @@ namespace Demo_WinForms_Calculators_CrankRatios
             cmbBox_Chainring2.Visible = false;
             lbl_Chainring3.Visible = false;
             cmbBox_Chainring3.Visible = false;
+
+            //
+            // hide sprockets 2-12 labels and combo boxes initially
+            //
+
+        }
+
+        private void PopulateNumberOfSprocketsComboBox()
+        {
+            const int MIN_NUMBER_OF_SPROCKETS = 1;
+            const int MAX_NUMBER_OF_SPROCKETS = 12;
+
+            IList<string> numberOfSprokects = new List<string>();
+
+            for (int sprocket = MIN_NUMBER_OF_SPROCKETS; sprocket <= MAX_NUMBER_OF_SPROCKETS; sprocket++)
+            {
+                numberOfSprokects.Add(sprocket.ToString());
+            }
+
+            cmbBox_NumberOfSprockets.DataSource = numberOfSprokects;
         }
 
         /// <summary>
@@ -86,5 +107,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
                 cmbBox_Chainring3.Visible = false;
             }
         }
+
+
     }
 }
