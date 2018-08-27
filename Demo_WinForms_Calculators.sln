@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_WinForms_Calculators_A", "Demo_WinForms_Calculators_A\Demo_WinForms_Calculators_A.csproj", "{39D93A98-5B30-4266-AE77-12C41564B689}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_WinForms_Calculators_CrankRatios", "Demo_WinForms_Calculators_CrankRatios\Demo_WinForms_Calculators_CrankRatios.csproj", "{B2E33AE1-7A64-4471-A0CD-E07CDE93FAD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{39D93A98-5B30-4266-AE77-12C41564B689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39D93A98-5B30-4266-AE77-12C41564B689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39D93A98-5B30-4266-AE77-12C41564B689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E33AE1-7A64-4471-A0CD-E07CDE93FAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E33AE1-7A64-4471-A0CD-E07CDE93FAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E33AE1-7A64-4471-A0CD-E07CDE93FAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E33AE1-7A64-4471-A0CD-E07CDE93FAD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
