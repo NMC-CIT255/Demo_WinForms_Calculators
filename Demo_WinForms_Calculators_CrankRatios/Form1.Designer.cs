@@ -72,11 +72,14 @@ namespace Demo_WinForms_Calculators_CrankRatios
             this.lbl_Sprocket2 = new System.Windows.Forms.Label();
             this.lbl_Sprocket1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.grpBox_Tires = new System.Windows.Forms.GroupBox();
+            this.lbl_TireSize = new System.Windows.Forms.Label();
             this.tab_Setup.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpBox_ChainringSet.SuspendLayout();
             this.grpBox_NumberOfChainrings.SuspendLayout();
             this.grpBox_Cassett.SuspendLayout();
+            this.grpBox_Tires.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_Setup
@@ -91,6 +94,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.grpBox_Tires);
             this.tabPage1.Controls.Add(this.grpBox_ChainringSet);
             this.tabPage1.Controls.Add(this.grpBox_Cassett);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -261,6 +265,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket12
             // 
+            this.cmbBox_Sprocket12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket12.FormattingEnabled = true;
             this.cmbBox_Sprocket12.Location = new System.Drawing.Point(131, 362);
             this.cmbBox_Sprocket12.Name = "cmbBox_Sprocket12";
@@ -269,6 +274,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket11
             // 
+            this.cmbBox_Sprocket11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket11.FormattingEnabled = true;
             this.cmbBox_Sprocket11.Location = new System.Drawing.Point(131, 332);
             this.cmbBox_Sprocket11.Name = "cmbBox_Sprocket11";
@@ -277,6 +283,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket10
             // 
+            this.cmbBox_Sprocket10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket10.FormattingEnabled = true;
             this.cmbBox_Sprocket10.Location = new System.Drawing.Point(131, 305);
             this.cmbBox_Sprocket10.Name = "cmbBox_Sprocket10";
@@ -285,6 +292,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket9
             // 
+            this.cmbBox_Sprocket9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket9.FormattingEnabled = true;
             this.cmbBox_Sprocket9.Location = new System.Drawing.Point(131, 278);
             this.cmbBox_Sprocket9.Name = "cmbBox_Sprocket9";
@@ -293,6 +301,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket8
             // 
+            this.cmbBox_Sprocket8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket8.FormattingEnabled = true;
             this.cmbBox_Sprocket8.Location = new System.Drawing.Point(131, 251);
             this.cmbBox_Sprocket8.Name = "cmbBox_Sprocket8";
@@ -301,6 +310,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket7
             // 
+            this.cmbBox_Sprocket7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket7.FormattingEnabled = true;
             this.cmbBox_Sprocket7.Location = new System.Drawing.Point(131, 223);
             this.cmbBox_Sprocket7.Name = "cmbBox_Sprocket7";
@@ -309,6 +319,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket6
             // 
+            this.cmbBox_Sprocket6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket6.FormattingEnabled = true;
             this.cmbBox_Sprocket6.Location = new System.Drawing.Point(131, 195);
             this.cmbBox_Sprocket6.Name = "cmbBox_Sprocket6";
@@ -317,6 +328,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket5
             // 
+            this.cmbBox_Sprocket5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket5.FormattingEnabled = true;
             this.cmbBox_Sprocket5.Location = new System.Drawing.Point(131, 167);
             this.cmbBox_Sprocket5.Name = "cmbBox_Sprocket5";
@@ -325,6 +337,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket4
             // 
+            this.cmbBox_Sprocket4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket4.FormattingEnabled = true;
             this.cmbBox_Sprocket4.Location = new System.Drawing.Point(131, 139);
             this.cmbBox_Sprocket4.Name = "cmbBox_Sprocket4";
@@ -333,14 +346,17 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_NumberOfSprockets
             // 
+            this.cmbBox_NumberOfSprockets.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_NumberOfSprockets.FormattingEnabled = true;
             this.cmbBox_NumberOfSprockets.Location = new System.Drawing.Point(166, 18);
             this.cmbBox_NumberOfSprockets.Name = "cmbBox_NumberOfSprockets";
             this.cmbBox_NumberOfSprockets.Size = new System.Drawing.Size(57, 24);
             this.cmbBox_NumberOfSprockets.TabIndex = 12;
+            this.cmbBox_NumberOfSprockets.SelectedIndexChanged += new System.EventHandler(this.cmbBox_NumberOfSprockets_SelectedIndexChanged);
             // 
             // cmbBox_Sprocket3
             // 
+            this.cmbBox_Sprocket3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket3.FormattingEnabled = true;
             this.cmbBox_Sprocket3.Location = new System.Drawing.Point(131, 111);
             this.cmbBox_Sprocket3.Name = "cmbBox_Sprocket3";
@@ -358,6 +374,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket2
             // 
+            this.cmbBox_Sprocket2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket2.FormattingEnabled = true;
             this.cmbBox_Sprocket2.Location = new System.Drawing.Point(131, 83);
             this.cmbBox_Sprocket2.Name = "cmbBox_Sprocket2";
@@ -366,6 +383,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // cmbBox_Sprocket1
             // 
+            this.cmbBox_Sprocket1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBox_Sprocket1.FormattingEnabled = true;
             this.cmbBox_Sprocket1.Location = new System.Drawing.Point(131, 56);
             this.cmbBox_Sprocket1.Name = "cmbBox_Sprocket1";
@@ -490,6 +508,25 @@ namespace Demo_WinForms_Calculators_CrankRatios
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // grpBox_Tires
+            // 
+            this.grpBox_Tires.Controls.Add(this.lbl_TireSize);
+            this.grpBox_Tires.Location = new System.Drawing.Point(11, 28);
+            this.grpBox_Tires.Name = "grpBox_Tires";
+            this.grpBox_Tires.Size = new System.Drawing.Size(200, 100);
+            this.grpBox_Tires.TabIndex = 14;
+            this.grpBox_Tires.TabStop = false;
+            this.grpBox_Tires.Text = "Tires";
+            // 
+            // lbl_TireSize
+            // 
+            this.lbl_TireSize.AutoSize = true;
+            this.lbl_TireSize.Location = new System.Drawing.Point(7, 22);
+            this.lbl_TireSize.Name = "lbl_TireSize";
+            this.lbl_TireSize.Size = new System.Drawing.Size(64, 17);
+            this.lbl_TireSize.TabIndex = 0;
+            this.lbl_TireSize.Text = "Tire Size";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -507,6 +544,8 @@ namespace Demo_WinForms_Calculators_CrankRatios
             this.grpBox_NumberOfChainrings.PerformLayout();
             this.grpBox_Cassett.ResumeLayout(false);
             this.grpBox_Cassett.PerformLayout();
+            this.grpBox_Tires.ResumeLayout(false);
+            this.grpBox_Tires.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -554,6 +593,8 @@ namespace Demo_WinForms_Calculators_CrankRatios
         private Label lbl_Sprocket3;
         private Label lbl_Sprocket2;
         private Label lbl_Sprocket1;
+        private GroupBox grpBox_Tires;
+        private Label lbl_TireSize;
     }
 }
 
