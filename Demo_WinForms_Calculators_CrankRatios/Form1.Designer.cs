@@ -33,6 +33,11 @@ namespace Demo_WinForms_Calculators_CrankRatios
         {
             this.tab_Setup = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.grpBox_Wheels = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lbl_TireSize = new System.Windows.Forms.Label();
+            this.cmbo_WheelSize = new System.Windows.Forms.ComboBox();
+            this.lbl_WheelSize = new System.Windows.Forms.Label();
             this.grpBox_ChainringSet = new System.Windows.Forms.GroupBox();
             this.lbl_Chainring3 = new System.Windows.Forms.Label();
             this.cmbBox_Chainring3 = new System.Windows.Forms.ComboBox();
@@ -72,14 +77,12 @@ namespace Demo_WinForms_Calculators_CrankRatios
             this.lbl_Sprocket2 = new System.Windows.Forms.Label();
             this.lbl_Sprocket1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.grpBox_Tires = new System.Windows.Forms.GroupBox();
-            this.lbl_TireSize = new System.Windows.Forms.Label();
             this.tab_Setup.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.grpBox_Wheels.SuspendLayout();
             this.grpBox_ChainringSet.SuspendLayout();
             this.grpBox_NumberOfChainrings.SuspendLayout();
             this.grpBox_Cassett.SuspendLayout();
-            this.grpBox_Tires.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab_Setup
@@ -94,7 +97,7 @@ namespace Demo_WinForms_Calculators_CrankRatios
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.grpBox_Tires);
+            this.tabPage1.Controls.Add(this.grpBox_Wheels);
             this.tabPage1.Controls.Add(this.grpBox_ChainringSet);
             this.tabPage1.Controls.Add(this.grpBox_Cassett);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -104,6 +107,81 @@ namespace Demo_WinForms_Calculators_CrankRatios
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Bike Setup";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // grpBox_Wheels
+            // 
+            this.grpBox_Wheels.Controls.Add(this.comboBox1);
+            this.grpBox_Wheels.Controls.Add(this.lbl_TireSize);
+            this.grpBox_Wheels.Controls.Add(this.cmbo_WheelSize);
+            this.grpBox_Wheels.Controls.Add(this.lbl_WheelSize);
+            this.grpBox_Wheels.Location = new System.Drawing.Point(11, 28);
+            this.grpBox_Wheels.Name = "grpBox_Wheels";
+            this.grpBox_Wheels.Size = new System.Drawing.Size(200, 139);
+            this.grpBox_Wheels.TabIndex = 14;
+            this.grpBox_Wheels.TabStop = false;
+            this.grpBox_Wheels.Text = "Wheels and Tires";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "20",
+            "23",
+            "25",
+            "26",
+            "27",
+            "28",
+            "30",
+            "32",
+            "35",
+            "37",
+            "38",
+            "40",
+            "42",
+            "44",
+            "45",
+            "50",
+            "56"});
+            this.comboBox1.Location = new System.Drawing.Point(29, 99);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(84, 24);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // lbl_TireSize
+            // 
+            this.lbl_TireSize.AutoSize = true;
+            this.lbl_TireSize.Location = new System.Drawing.Point(29, 78);
+            this.lbl_TireSize.Name = "lbl_TireSize";
+            this.lbl_TireSize.Size = new System.Drawing.Size(100, 17);
+            this.lbl_TireSize.TabIndex = 2;
+            this.lbl_TireSize.Text = "Tire Size (mm)";
+            // 
+            // cmbo_WheelSize
+            // 
+            this.cmbo_WheelSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbo_WheelSize.FormattingEnabled = true;
+            this.cmbo_WheelSize.Items.AddRange(new object[] {
+            "16",
+            "20",
+            "24",
+            "26",
+            "27",
+            "28",
+            "29"});
+            this.cmbo_WheelSize.Location = new System.Drawing.Point(29, 47);
+            this.cmbo_WheelSize.Name = "cmbo_WheelSize";
+            this.cmbo_WheelSize.Size = new System.Drawing.Size(84, 24);
+            this.cmbo_WheelSize.TabIndex = 1;
+            // 
+            // lbl_WheelSize
+            // 
+            this.lbl_WheelSize.AutoSize = true;
+            this.lbl_WheelSize.Location = new System.Drawing.Point(26, 26);
+            this.lbl_WheelSize.Name = "lbl_WheelSize";
+            this.lbl_WheelSize.Size = new System.Drawing.Size(108, 17);
+            this.lbl_WheelSize.TabIndex = 0;
+            this.lbl_WheelSize.Text = "Wheel Size (in.)";
             // 
             // grpBox_ChainringSet
             // 
@@ -508,25 +586,6 @@ namespace Demo_WinForms_Calculators_CrankRatios
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // grpBox_Tires
-            // 
-            this.grpBox_Tires.Controls.Add(this.lbl_TireSize);
-            this.grpBox_Tires.Location = new System.Drawing.Point(11, 28);
-            this.grpBox_Tires.Name = "grpBox_Tires";
-            this.grpBox_Tires.Size = new System.Drawing.Size(200, 100);
-            this.grpBox_Tires.TabIndex = 14;
-            this.grpBox_Tires.TabStop = false;
-            this.grpBox_Tires.Text = "Tires";
-            // 
-            // lbl_TireSize
-            // 
-            this.lbl_TireSize.AutoSize = true;
-            this.lbl_TireSize.Location = new System.Drawing.Point(7, 22);
-            this.lbl_TireSize.Name = "lbl_TireSize";
-            this.lbl_TireSize.Size = new System.Drawing.Size(64, 17);
-            this.lbl_TireSize.TabIndex = 0;
-            this.lbl_TireSize.Text = "Tire Size";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -538,14 +597,14 @@ namespace Demo_WinForms_Calculators_CrankRatios
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tab_Setup.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.grpBox_Wheels.ResumeLayout(false);
+            this.grpBox_Wheels.PerformLayout();
             this.grpBox_ChainringSet.ResumeLayout(false);
             this.grpBox_ChainringSet.PerformLayout();
             this.grpBox_NumberOfChainrings.ResumeLayout(false);
             this.grpBox_NumberOfChainrings.PerformLayout();
             this.grpBox_Cassett.ResumeLayout(false);
             this.grpBox_Cassett.PerformLayout();
-            this.grpBox_Tires.ResumeLayout(false);
-            this.grpBox_Tires.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -593,7 +652,10 @@ namespace Demo_WinForms_Calculators_CrankRatios
         private Label lbl_Sprocket3;
         private Label lbl_Sprocket2;
         private Label lbl_Sprocket1;
-        private GroupBox grpBox_Tires;
+        private GroupBox grpBox_Wheels;
+        private Label lbl_WheelSize;
+        private ComboBox cmbo_WheelSize;
+        private ComboBox comboBox1;
         private Label lbl_TireSize;
     }
 }

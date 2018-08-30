@@ -179,5 +179,17 @@ namespace Demo_WinForms_Calculators_CrankRatios
                 labels[0].Visible = true;
             }
         }
+
+        private double ConvertTireSizeKeyToDouble(string tireSizeKeyMM)
+        {
+            return double.Parse(tireSizeKeyMM) / 2.54;
+        }
+
+        private double ConvertWheelSizeToDouble(string wheelSizeKeyIn)
+        {
+            return double.Parse(wheelSizeKeyIn);
+        }
+
+
     }
 }
